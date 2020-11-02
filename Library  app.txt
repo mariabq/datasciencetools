@@ -1,0 +1,44 @@
+BIBLIOTECA
+
+Users:Lybrarian, Member
+
+Users properties: 
+Name, 
+ID, 
+password, 
+List of books checked out, 
+List of books on hold
+
+Users actions:
+Lybrarian: 
+adds/ deletes book records, 
+view book catalog, 
+search the catalog, 
+places a hold, 
+checks book out, 
+cancel hold, 
+records when book is returned (change status from checked out to available),
+views members and member profile
+
+Member:
+view book catalog, 
+search the catalog, 
+places a hold, 
+checks book out, 
+cancel hold, 
+
+OBS: one User object, two interfaces for each type of user
+
+Obiectul stocat: Book
+- name
+- author
+- no in database
+- code
+- subject
+- ISBN
+- status: checked out, on hold, available 
+OBS: each status is an ENUM that has a date asociated to it
+
+Baza de date: SQL
+1. Users
+2. Books
